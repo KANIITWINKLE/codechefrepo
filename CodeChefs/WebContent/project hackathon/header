@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="design.css" type="text/css">
+<style>
+
+.mySlides {
+text-align:center;
+}
+.myslides img{
+width:100%;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #F0E68C;
+  color:black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+
+
+}page
+</style>
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
+<TITLE>home 
+</TITLE>
+<BODY  BGCOLOR="F5F5F5">
+<header>
+<img src="logo.png" width="280" height="165">
+</header>
+<ul>
+  <div class="navbar">
+    <li> <a class="active" href="home.html">HOME</a></li>
+      <li> 
+     <div class="dropdown">
+        <button class="dropbtn">ADMIN</button>
+     <div class="dropdown-content">
+      <a href="FacLogin.html">Login</a>
+     </div>
+     <li> 
+     <div class="dropdown">
+        <button class="dropbtn">FACULTY</button>
+     <div class="dropdown-content">
+      <a href="RegisFaculty.html">Registration</a>
+       <a href="LoginFaculty.html">Login</a>
+     </div>
+     <li><a href="about.html">ABOUT US</a>
+     </div>
+      
+    </ul>
+    <br><br><br><br><br><br>
+<footer>
+<center>COPYRIGHT &copy; 2018 CODE CHEFS.com</center></footer>
+</body>
+</html>

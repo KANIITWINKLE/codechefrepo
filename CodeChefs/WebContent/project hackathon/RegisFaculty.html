@@ -1,0 +1,187 @@
+<HTML>
+<HEAD>
+<link rel ="stylesheet" href="design.css" type="text/css">
+<style>
+#active {
+    background-color: #4CAF50;
+}
+.createbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #4CAF50;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+<script type="text/javascript">
+	function validate()
+	{
+		if(document.myform.fname.value == " ")
+		{
+			alert("PLEASE ENTER YOUR FIRST NAME");
+			document.myform.fname.focus() ;
+			return false;
+		}
+		if(document.myform.lname.value == " ")
+		{
+			alert("PLEASE ENTER YOUR LAST NAME");
+			document.myform.lname.focus() ;
+			return false;
+		}
+		if(document.myform.MNO.value == " ")
+		{
+			alert("PLEASE ENTER YOUR MOBILE NUMBER");
+			document.myform.mno.focus() ;
+			return false;
+		}
+		if(document.myform.id.value == " ")
+		{
+			alert("PLEASE ENTER YOUR EMAIL ID");
+			document.myform.id.focus() ;
+			return false;
+		}
+		if(document.myform.pass.value == " ")
+		{
+			alert("PLEASE ENTER YOUR PASSWORD");
+			document.myform.fname.focus() ;
+			return false;
+		}
+		if(document.myform.student_pwd.value.length < 8 )
+		{
+			alert("Enter password greater than 8 digits");
+			document.myform.student_pwd.focus() ;
+			return false;
+		}
+		if(document.myform.pass.value != document.myform.Repass.value)
+		{
+			alert("PASSWORD AND RE-ENTER PASSWORD ARE NOT MATCHING");
+			document.myform.Repass.focus();
+			return false;
+		}
+		return (true);
+	}
+</script>
+</HEAD>
+<TITLE>REGISTRATION FACULTY
+</TITLE>
+<BODY  BGCOLOR="F5F5F5">
+<header>
+<img src="logo.png" width="280" height="165">
+</header>
+<ul>
+	<div class="navbar">
+ <li> <a href="home.html">HOME</a></li>
+  <li><a  href="AdminLogin.html"> ADMIN</a></li>
+  <div class="dropdown">
+   <li> <div class="dropdown">
+
+    <button class="dropbtn" id= "active" >FACULTY
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="RegisFaculty.html">Registration</a>
+      <a href="LoginFaculty.html">Login</a>
+    </div>
+  </div> 
+  <div>
+    <li><a href="contact.HTML">CONTACT US</a></li>
+</div>
+</ul>
+<center>
+<p align="center"><br>
+<font size="10">Create New Account</font> <br><br>
+<form action="run" method="post">
+<input type="text" name="fname" placeholder="First Name" size="23">
+<input type="text" name="lname" placeholder="Last Name" size="23"><br><br> 
+ <input type="text" name="mno" placeholder="Mobile Number" size="51"><br><br>
+<input type="text" name="id" placeholder="E-mail Address" size="51"><br><br>
+<input type="password" name="pass" placeholder="Password" size="51"><br><br>
+ <input type="password" name="Repass" placeholder="Re-Enter Password" size="51"><br><br>
+ <input type="file" name="pic" accept="images/*" size="37"><br><br>
+<input type="radio" name="gender" value="male">Male&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" value="female">Female  <br><br>
+<font size="2" >By clicking Create Account, you agree to our Terms and conditions.<br><br><br>
+<input type="submit" class="createbutton" name="submit" value="Create Account" size="24" border-radius="12px" width="205px" background-color="green"></center>
+</font></form>
+</p><br><br>
+<footer>
+<CENTER>COPYRIGHT &copy; 2018 CODE CHEFS.COM</CENTER></FOOTER>
+</body>
+</html>
